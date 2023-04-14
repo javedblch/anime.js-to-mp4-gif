@@ -5,28 +5,28 @@ padding: 0px;
 }
 
 .svg {
-left:240px;
-top:35px;
+left:220px;
+top:55px;
 position:relative;
-width:97px;
-height:125px;
+width:130px;
+height:auto;
 }
 
 .company {
 font-size: 2em;
-color:#000000;
+color:#FF4F00;
 font-family: 'Graduate', sans-serif;
-left:160px;
-top:40px;
+left:150px;
+top:60px;
 position:relative;
 }
 
 .slogan {
 font-size: 1em;
-color:#000000;
+color:#9E9C98;
 font-family: 'Quicksand', sans-serif;
-left:230px;
-top:45px;
+left:220px;
+top:65px;
 position:relative;
 }
 
@@ -51,7 +51,7 @@ justify-content: center;
 margin: 5px 0;
 }
 
-.column {
+.container {
 flex: 1;
 border: 1px solid gray;
 margin: 2px;
@@ -84,7 +84,7 @@ margin: 0 0 5px 0;
 }
 }
 
-.button-4 {
+.button {
   appearance: none;
   background-color: #FAFBFC;
   border: 1px solid rgba(27, 31, 35, 0.15);
@@ -110,33 +110,33 @@ margin: 0 0 5px 0;
   word-wrap: break-word;
 }
 
-.button-4:hover {
+.button:hover {
   background-color: #F3F4F6;
   text-decoration: none;
   transition-duration: 0.1s;
 }
 
-.button-4:disabled {
+.button:disabled {
   background-color: #FAFBFC;
   border-color: rgba(27, 31, 35, 0.15);
   color: #959DA5;
   cursor: default;
 }
 
-.button-4:active {
+.button:active {
   background-color: #EDEFF2;
   box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
   transition: none 0s;
 }
 
-.button-4:focus {
+.button:focus {
   outline: 1px transparent;
 }
 
-.button-4:before {
+.button:before {
   display: none;
 }
 
-.button-4:-webkit-details-marker {
+.button:-webkit-details-marker {
   display: none;
 }

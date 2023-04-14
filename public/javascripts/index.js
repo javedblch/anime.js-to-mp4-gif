@@ -1,6 +1,4 @@
 window.addEventListener("DOMContentLoaded", () => {
-
-console.log('The page has fully loaded');
 	
 let timeline = anime.timeline({
 loop: false,
@@ -35,14 +33,14 @@ timeline.add({
 initiate();
 
 
-const post = async () => {
-
+const convert = async () => {
+	
 let data = {
-html: document.getElementById("animation").outerHTML,
+html: document.querySelectorAll('.container')[0].outerHTML,
 animation: initiate.toLocaleString(),
 duration: Number(timeline.duration/1000),
-width: document.getElementById("animation").offsetWidth,
-height: document.getElementById("animation").offsetHeight,
+width: document.querySelectorAll('.container')[0].offsetWidth,
+height: document.querySelectorAll('.container')[0].offsetHeight,
 }
 
 const response = await fetch("/convert-to-video", {
@@ -55,6 +53,6 @@ body: JSON.stringify(data),
 
 };
 
-document.getElementById("submit").onclick = post;
+document.querySelectorAll('.button')[0].onclick = convert;
 	
 });

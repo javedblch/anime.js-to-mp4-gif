@@ -10,7 +10,7 @@ viewport: {
 width: data.width,
 height:data.height
 },
-selector: '#animation',
+selector: '.container',
 left: 0, 
 top: 0,
 right: 0, 
